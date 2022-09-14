@@ -4,7 +4,8 @@ const app = express();
 app.use(express.static("public"));
 app.use(cors());
 
-app.locals.mantras = [
+app.locals.mantras = { 
+  mantras : [
 `I forgive myself and set myself free.`,
 `I believe I can be all that I want to be.`,
 `I am in the process of becoming the best version of myself.`,
@@ -33,7 +34,8 @@ app.locals.mantras = [
 `The only constant is change.`,
 `Onward and upward.`,
 `I am the sky, the rest is weather.`,
-];
+]
+  }
   
 app.get("/:mantra", (request, response) => {
   const data = app.locals.mantras;
