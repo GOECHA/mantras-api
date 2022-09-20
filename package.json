@@ -1,6 +1,9 @@
 {
   "name": "mantras-api",
   "version": "1.0.0",
+  "engines" : { 
+    "node": "16.17.0"
+  },
   "description": "",
   "main": "server.js",
   "scripts": {
@@ -16,4 +19,5 @@
     "react": "18.0.0",
     "react-dom": "18.0.0~"
   }
+
 }
